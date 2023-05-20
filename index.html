@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Clock</title>
+</head>
+<body style="background-image: url(https://sozaino.site/wp-content/uploads/2020/11/sai-24.png); background-size: cover;">
+<h1 style="text-align: center; font-size: 7em; position: relative; top: 100px;text-shadow: 0 3px 0 #ccc;letter-spacing: 4;">現在の時刻</h1>
+<p id="time" style="text-align: center; font-size: 10em; position: absolute; top: 100px; left: 50%; transform: translateX(-50%); color: brack; text-shadow: 0 5px 0 #ccc;letter-spacing: 2;">
+</p>
+<script>
+var currentTime = new Date();
+var hours = currentTime.getHours();
+var minutes = currentTime.getMinutes();
+var seconds = currentTime.getSeconds();
+document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
+setInterval(function() {
+var currentTime = new Date();
+var hours = currentTime.getHours();
+var minutes = currentTime.getMinutes();
+var seconds = currentTime.getSeconds();
+document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
+}, 1000);
+</script>
+<p style="text-align: center; font-size: 3em; position: relative; top: 300px; color: brack;">
+<a href="https://www.upload.nicovideo.jp/nv-garage/videos?ref=pc_mypage_top" target="_blank">ニコニコ</a>
+</p>
+<p style="text-align: center; font-size: 3em; position: relative; top: 300px; color: brack;">
+<a href="https://www.youtube.com/@user-yt7oy6ze1t" target="_blank">YouTube</a>
+</p>
+</body>
+</html>
